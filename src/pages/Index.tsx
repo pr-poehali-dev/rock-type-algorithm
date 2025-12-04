@@ -265,18 +265,9 @@ export default function Index() {
             {filteredRocks.map((rock, idx) => (
               <Card 
                 key={rock.id} 
-                className="shadow-lg hover:shadow-xl transition-shadow animate-fade-in hover-scale overflow-hidden"
+                className="shadow-lg hover:shadow-xl transition-shadow animate-fade-in hover-scale"
                 style={{ animationDelay: `${idx * 0.1}s` }}
               >
-                {rock.image && (
-                  <div className="w-full h-48 overflow-hidden bg-muted">
-                    <img 
-                      src={rock.image} 
-                      alt={rock.name}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                )}
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <div>
